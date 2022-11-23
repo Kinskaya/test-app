@@ -1,0 +1,60 @@
+@import-normalize;
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+button,
+.input-wrap {
+  border: 1.95px solid white;
+  transform: skew(130deg);
+
+  @media (max-width: 768px) {
+    transform: none;
+  }
+
+}
+
+.input-wrap {
+  width: 425px;
+  height: 50px;
+  display: flex;
+
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
+
+}
+
+form {
+  width: 713px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  background: url(https://cdn.pixabay.com/photo/2017/06/12/17/54/anemone-2396299_1280.jpg) no-repeat;
+  background-size: cover;
+
+  @media (max-width: 768px) {
+    width: 383px;
+    height: 123px;
+  }
+
+}
+
+
